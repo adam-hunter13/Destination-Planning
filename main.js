@@ -2,7 +2,10 @@
 const destinationsContainer = document.querySelector('#destinations-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:5001/api/destinations`
+// use baseURL below if using live server 
+// const baseURL = `http://localhost:5001/api/destinations`
+// use baseURL below if using heroku
+const baseURL = `/api/destinations`
 
 const destinationsCallback = ({ data: destinations }) => displayDestinations(destinations)
 const errCallback = err => console.log(err)
